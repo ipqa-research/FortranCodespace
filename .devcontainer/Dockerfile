@@ -15,5 +15,5 @@ RUN python3 -m pip install --upgrade \
 RUN apt-get install wget
 
 RUN wget https://raw.githubusercontent.com/ipqa-research/fortran-setup/main/bootstrap_fortran.sh && chmod +x bootstrap_fortran.sh
-RUN echo n n y y | ./bootstrap_fortran.sh
+RUN printf "n\nn\ny\ny\n" | ./bootstrap_fortran.sh
 RUN rm bootstrap_fortran.sh
