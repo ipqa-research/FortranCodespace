@@ -3,7 +3,7 @@
         "dockerfile": "Dockerfile",
         "context": "."
     },
-    "postStartCommand": "wget https://raw.githubusercontent.com/ipqa-research/fortran-setup/main/bootstrap_fortran.sh && printf \"n\nn\ny\ny\n\" | bash ./bootstrap_fortran.sh",
+    "postStartCommand": "bash .devcontainer/script.sh",
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2":{
             "installZsh": "true",
@@ -25,7 +25,69 @@
 		"vscode": {
 			// Set *default* container specific settings.json values on container create.
 			"settings": {
-				"python.defaultInterpreterPath": "/usr/local/bin/python"
+                "editor.rulers":[{"color": "gray", "column": 80}],
+				"python.defaultInterpreterPath": "/usr/local/bin/python",
+                "fortran.linter.includePaths": [
+                    "${workspaceFolder}/build/gfo*"
+                ],
+                "fortran.linter.fypp.enabled": true,
+                "fortran.fortls.excludeDirectories": [
+                    "build",
+                    "doc/**"
+                ],
+                "better-comments.tags": [
+                    {
+                        "tag": "!!",
+                        "color": "#FF2D00",
+                        "strikethrough": false,
+                        "underline": false,
+                        "backgroundColor": "transparent",
+                        "bold": false,
+                        "italic": false
+                    },
+                    {
+                        "tag": "?",
+                        "color": "#3498DB",
+                        "strikethrough": false,
+                        "underline": false,
+                        "backgroundColor": "transparent",
+                        "bold": false,
+                        "italic": false
+                    },
+                    {
+                        "tag": "//",
+                        "color": "#474747",
+                        "strikethrough": true,
+                        "underline": false,
+                        "backgroundColor": "transparent",
+                        "bold": false,
+                        "italic": false
+                    },
+                    {
+                        "tag": "todo",
+                        "color": "#FF8C00",
+                        "strikethrough": false,
+                        "underline": false,
+                        "backgroundColor": "transparent",
+                        "bold": false,
+                        "italic": false
+                    },
+                    {
+                        "tag": "*",
+                        "color": "#98C379",
+                        "strikethrough": false,
+                        "underline": false,
+                        "backgroundColor": "transparent",
+                        "bold": false,
+                        "italic": false
+                    }
+                ],
+                "fortran.linter.initialize": false,
+                "fortran.formatting.findentArgs": [
+                    "--refactor_end",
+                    "-i3"
+                ],
+                "fortran.notifications.releaseNotes": false
 			},
             "extensions": [
                 "fortran-lang.linter-gfortran",
