@@ -2,13 +2,15 @@ name = "ipqa-fortran"
 version = "0.1.0"
 license = "license"
 author = "Federico E. Benelli"
-maintainer = "fedebenelli@outlook.com"
+maintainer = "federico.benelli@mi.unc.edu.ar"
 copyright = "Copyright 2024, Federico E. Benelli"
+
 [build]
 auto-executables = true
 auto-tests = true
 auto-examples = true
 module-naming = false
+
 [install]
 library = false
 [fortran]
@@ -16,3 +18,6 @@ implicit-typing = false
 implicit-external = false
 source-form = "free"
 
+[dependencies]
+stdlib="*"
+yaeos = {git="https://github.com/ipqa-research/yaeos"}
