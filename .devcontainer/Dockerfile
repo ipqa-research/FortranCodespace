@@ -13,4 +13,4 @@ RUN python3 -m pip install --upgrade \
     pipx
 
 RUN wget https://raw.githubusercontent.com/ipqa-research/fortran-setup/main/bootstrap_fortran.sh \
-    && printf "n\nn\ny\ny\n" | ./bootstrap_fortran.sh
+    && printf "n\nn\ny\ny\n" | bash ./bootstrap_fortran.sh
