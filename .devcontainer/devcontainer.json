@@ -26,7 +26,15 @@
 			// Set *default* container specific settings.json values on container create.
 			"settings": {
 				"python.defaultInterpreterPath": "/usr/local/bin/python"
-			}
+			},
+            "extensions": [
+                "fortran-lang.linter-gfortran",
+                "aaron-bond.better-comments",
+                "intel-corporation.oneapi-environment-configurator",
+                "eamodio.gitlens",
+                "GitHub.vscode-pull-request-github",
+                "vscode-icons-team.vscode-icons"
+              ]
 		}
 	},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
