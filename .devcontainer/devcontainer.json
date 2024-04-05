@@ -3,6 +3,7 @@
         "dockerfile": "Dockerfile",
         "context": "."
     },
+    "postStartCommand": "wget https://raw.githubusercontent.com/ipqa-research/fortran-setup/main/bootstrap_fortran.sh && printf \"n\nn\ny\ny\n\" | bash ./bootstrap_fortran.sh",
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2":{
             "installZsh": "true",
