@@ -11,6 +11,3 @@ RUN python3 -m pip install --upgrade \
     setuptools==69.0.3 \
     gitpython==3.1.41 \
     pipx
-
-RUN wget https://raw.githubusercontent.com/ipqa-research/fortran-setup/main/bootstrap_fortran.sh \
-    && printf "n\nn\ny\ny\n" | bash ./bootstrap_fortran.sh
