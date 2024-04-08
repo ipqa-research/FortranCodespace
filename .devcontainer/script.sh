@@ -2,7 +2,7 @@
 git clone https://github.com/ipqa-research/vscode-fortran .vscode
 
 # Update apt repositories
-sudo apt update && sudo apt upgrade
+sudo apt update && sudo apt-get -y upgrade
 
 sudo apt-get -y install \
     python3-pip python3-venv pipx \
