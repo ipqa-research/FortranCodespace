@@ -29,3 +29,11 @@ fpm run "your-file-name-here"
 ```
 
 ## Debugging
+This Codespace comes with three pre-configured debugging options:
+
+![image](https://github.com/ipqa-research/FortranCodespace/assets/24468661/ab561348-9ae2-4789-bfaa-99e21b7a15a7)
+
+
+- `(gdb) Launch`: Debugs the [app/main.f90](app/main.f90) program
+- `(gdb) Launch Example`: Debugs the [example/example.f90](example/example.f90) program
+- `(gdb) Launch Test`: Debugs the currently open test file (that should be on the [test](test) directory)
