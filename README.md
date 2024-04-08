@@ -7,7 +7,11 @@ problematic, here we made a template with the basics things that any new
 Modern Fortran project should have (and some extra things that we use on our
 research group)
 
-## Running
+## Setting up the Codespace
+To set up the Codespace on your account just click on "Open in a Codespace" from the "Use this template button" 
+![image](https://github.com/ipqa-research/FortranCodespace/assets/24468661/58ecffc8-d368-47a1-9531-a70c396ea04a)
+
+## Running code
 Once the Codespace is set up, run:
 
 ```
