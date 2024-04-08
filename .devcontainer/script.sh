@@ -1,4 +1,18 @@
-wget https://raw.githubusercontent.com/ipqa-research/fortran-setup/main/bootstrap_fortran.sh \
-    && printf \"n\nn\ny\ny\n\" | bash ./bootstrap_fortran.sh \
-    && rm bootstrap_fortran.sh
+# Clone .vscode settings for debugging
 git clone https://github.com/ipqa-research/vscode-fortran .vscode
+
+# Update apt repositories
+sudo apt update && sudo apt upgrade
+
+sudo apt install \
+    python3-pip python3-venv pipx \
+    gfortran \
+    libblas-dev liblapack-dev \
+    gdb \
+    fzf
+
+# Install fortran language server, fprettify and flinter
+packages=( fortls findent flinter ford fpm fypp )
+for package in ${packages[@]}; do
+    pipx install $package --force --pip-args=--pre
+done
