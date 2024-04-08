@@ -94,8 +94,7 @@
                 "aaron-bond.better-comments",
                 "intel-corporation.oneapi-environment-configurator",
                 "eamodio.gitlens",
-                "GitHub.vscode-pull-request-github",
-                "vscode-icons-team.vscode-icons"
+                "GitHub.vscode-pull-request-github"
               ]
 		}
 	},
