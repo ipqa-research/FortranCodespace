@@ -9,7 +9,8 @@ research group)
 
 ## Setting up the Codespace
 To set up the Codespace on your account just click on "Open in a Codespace" from the "Use this template button".
-If you want to keep your developed codes for later it is better to select the "Create a repository" option.
+If you want to keep your developed codes for later it is better to select the "Create a repository" option. 
+Setting up the Codespace can take several (even up to 15/20) minutes, this will happen only on the first time it is set up.
 
 ---
 ![image](https://github.com/ipqa-research/FortranCodespace/assets/24468661/58ecffc8-d368-47a1-9531-a70c396ea04a)
